@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seleção LOJACORR</title>
+        <meta charset="UTF-8">
+		
+		<!-- Force compatible IE -->
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+
+		<!-- Mobile first -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS Styles -->
+		<link rel="stylesheet" type="text/css" href="css/general.css">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.googleapis.icons.css">
+		
+		<!-- JS Scripts -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/md5.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+		
+		<script>
+			$(document).ready(function () {
+			  init();
+			});
+		</script>
+    </head>
+	
+    <body>
+			
+		<!--				   Login Form  					 -->
+		<div>
+			<div class="row">
+				<div id="login-card" class="text-center">
+					<div class="row">
+						<form id="form-login" class="col s12 space-card">
+							<div class="row row-bottom-nomargin">
+								<div class="input-field col s12">
+									<img style="width: inherit" alt="Logo da rede LOJACORR" src="img/lojacorr_logo.png">
+								</div>
+							</div>
+							<div class="row row-bottom-nomargin">
+								<div class="input-field col s12">
+									<input id="email_inline" type="email" class="validate">
+									<label for="email_inline">Email</label>
+									<span class="helper-text" data-error="Digite um e-mail válido" data-success="E-mail válido">Tente: selecao@lojacorr.com.br</span>
+								</div>
+							</div>
+							<div class="row row-bottom-nomargin">
+								<div class="input-field col s12">
+									<input id="password" type="password">
+									<label for="password">Senha</label>
+									<span class="helper-text">Tente: selecao123</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col align-center">
+									<a id="try-Login" class="waves-effect waves-light btn-small">Entrar</a>
+								</div>
+							</div>
+						</form>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+    </body>
+</html>

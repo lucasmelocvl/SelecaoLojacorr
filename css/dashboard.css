@@ -1,0 +1,158 @@
+html{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: 0 auto;
+	background-color: honeydew;
+	background-size: cover;
+	min-height: 600px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+p{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+	color: white;
+}
+
+#lockLayer{
+	background-color: black;
+    width: 100%;
+    height: 2020px;
+    top: 0px;
+    position: absolute;
+}
+
+#lockLayer>div.row{
+	margin-right: 0px;
+    margin-left: 0x;
+}
+
+#lockGif{
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#topLogo{
+	max-height: 56px;
+}
+
+h1{
+	color: brown;
+}
+
+nav{
+	background-color: #b71c1c !important;
+}
+
+#space-to-nav{
+	display: block;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#search-icon{
+	top: -10px;
+    left: 15px;
+}
+
+#search{
+	color:white;
+}
+
+#search:focus{
+	color:black;
+}
+
+.navbar-inverse {
+    background-color: #b71c1c !important;
+    border-color: #b71c1c !important;
+}
+
+.jumbotron{
+	display: block !important;
+}
+
+.jumbotron>div{
+	margin-left: auto;
+	margin-right: auto;
+	display: contents;
+}
+
+#filter-search-space{
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#table-list{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#paginator{
+	display: flex;
+}
+
+ul.pagination{
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+
+.about>div{
+	padding: 0px;
+	margin-bottom: 0px !important;
+}
+
+.about{
+	margin-bottom: 0px !important;
+}
+
+#persona{
+	
+}
+
+.container{
+	position: absolute;
+}
+
+.error{
+	background-color: brown !important;
+}
+
+.success{
+	background-color: green !important;
+}
+
+footer{
+	background-color: #b71c1c !important;
+	height: 70px;
+}
+
+footer>p{
+	color: white;
+	background-color: #b71c1c !important;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	font-size: 1em !important; 
+}
+
+footer>p>a{
+	color: #ffcdd2;
+}
+
+footer>p>a:hover{
+	color: #e57373;
+}

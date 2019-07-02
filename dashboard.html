@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seleção LOJACORR</title>
+        <meta charset="UTF-8">
+        
+        <!-- Force compatible IE -->
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+
+		<!-- Mobile first -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS Styles -->
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.googleapis.icons.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+		
+		<!-- JS Scripts -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/popper.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/initDash.js"></script>
+		
+		<script>
+			$(document).ready(function () {
+              init();
+			});
+		</script>
+    </head>
+	
+    <body>
+        <!-- Modal Structure -->
+        <div id="addUser" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Informe os dados do novo usuário</h4>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Roberto" id="form_name" type="text" class="validate">
+                                <label for="form_name">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Lojacorr" id="form_company" type="text" class="validate">
+                                <label for="form_company">Empresa</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Rua martin afonso 36" id="form_adress" type="text" class="validate">
+                                <label for="form_adress">Endereço</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a id="cancel-user" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                <a id="save-user" class="modal-close waves-effect waves-green btn-flat">Salvar</a>
+            </div>
+        </div>
+
+        <nav>
+            <div class="nav-wrapper">
+                <div id="space-to-nav">
+                    <img id="topLogo" src="img/lojacorr_logo_branca.png" alt="Rede LOJACORR">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="create-user"><a><i class="material-icons left modal-trigger" href="#addUser">person_add</i>Adicionar Usuário</a></li>
+                        <li class="logout-button"><a><i class="material-icons left">exit_to_app</i>Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <ul class="sidenav" id="mobile-demo">
+            <li class="create-user"><a><i class="material-icons modal-trigger create-user" href="#addUser">person_add</i>Adicionar Usuário</a></li>
+            <li class="logout-button"><a><i class="material-icons">exit_to_app</i>Sair</a></li>
+        </ul>
+
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1>Busca rápida</h1>      
+                <div id="filter-search-space">
+                    <nav id="filter-search">
+                        <div class="nav-wrapper">
+                            <form>
+                                <div class="input-field">
+                                    <input id="search" type="search" class="search" required>
+                                    <label id="search-icon" class="label-icon" for="search"><i id="search-icon-i" class="material-icons">search</i></label>
+                                    <i class="material-icons">close</i>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+                <p>Filtre os usuários e endereços desejados</p>
+            </div>
+        </div>
+
+        <div id="table-list">
+            <table class="highlight responsive-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Empresa</th>
+                        <th>Endereço</th>
+                    </tr>
+                </thead>
+                <tbody id="list-search">
+                  <!--All data comme here-->  
+                </tbody>
+            </table>
+            <br/>
+        </div>
+
+        
+        <!-- Maybe on future...
+        <div id="paginator">
+            <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </div>-->
+
+        <br>
+        <div class="container-fluid bg-3 text-center">    
+            <h3 class="flow-text">Estudo da persona para tomada de decisões</h3><br>
+        </div>
+        
+        <div class="container-fluid bg-3 text-center">    
+            
+        </div><br>
+
+        <div class="row">
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/persona.jpg">
+                        <span class="card-title">Criação da persona</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="flow-text">Roberto, tem 32 anos, formada em marketing e direito do consumidor. Participa ativamente de convenções junto da empresa onde trabalha, na qual realiza networking constantemente, além de reuniões de negócios onde conquista vários clientes. Tem buscado inovações tecnológicas que acelerem e aprimorem seu desempenho como profissional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card">
+                <div class="card-image">
+                    <img src="img/user-research.jpg">
+                    <span class="card-title">Resultado</span>
+                </div>
+                <div class="card-content">
+                    <p class="flow-text">Buscando priorizar a agilidade e maximizar a performance de Roberto, o sistema de usuários foi desenvolvido priorizando a facilidade das consultas de informações e cadastros de novos usuários, tudo em uma mesma tela, diminuindo assim, o esforço do usuário com troca de janelas em busca de novas informações.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="container-fluid text-center">
+            <p class="flow-text">Seleção Lojacorr 2019<br/>
+                <a href="https://lucasmelocvl.github.io">lucasmelocvl</a>
+            </p>
+        </footer>
+        <div id="lockLayer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img id="lockGif" src="img/unlock.gif" href="Desbloqueando sistema">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
